@@ -31,6 +31,8 @@ Filesystem Structure
  
  * `/vhost.conf` The nginx config include to set up caching, rewrites, etc.
  
+ * `/template.html` The HTML template for each page
+ 
  * `/index.php` Code for the controller
  
  * `/content/` Main content directory
