@@ -13,6 +13,7 @@ if(file_exists('./modules/'.$request[0].'.php')){
 	$output=call_user_func_array($request[0].'Output',array($request));
 	if(!$output){
 		// TODO: handle 500
+		die();
 	}
 }else{
 	// TODO: handle 404
