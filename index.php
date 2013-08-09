@@ -15,8 +15,7 @@ if(file_exists('./modules/'.$request[0].'.php')){
 		giveError(500,'Internal Server Error');
 	}
 }else{
-	// TODO: handle 404
-	die();
+	giveError(404,'Not Found');
 }
 // Put the output into a template
 $template=file_get_contents('template.html');
@@ -26,7 +25,7 @@ if(!empty($output['template'])&&is_array($output['template'])){
 	}
 }
 // Error function
-function giveError(int $code,string $message=''){
+function giveError($code,$message){
 	$template=file_get_contents('errorTemplate.html');
 	$template=str_replace('{{!code}}',(string)$code,$template);
 	$template=str_replace('{{!message}}',$message,$template);
