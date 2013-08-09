@@ -36,3 +36,18 @@ Filesystem Structure
  * `/modules/` PHP files to handle requests to the controller
  
  * `/libs/` Third party libraries
+ 
+Coding Style
+-----
+
+This code base will follow a minimal coding style. That is:
+
+ * /t tabs
+ 
+ * Curly braces on the same line as the control structure beginning
+ 
+ * No spacing around operators
+ 
+ * littleBig naming convention
+ 
+ * Code that explains itself - comments should be unnecessary
