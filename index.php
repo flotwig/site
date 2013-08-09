@@ -19,3 +19,10 @@ if(file_exists('./modules/'.$request[0].'.php')){
 	// TODO: handle 404
 	die();
 }
+// Put the output into a template
+$template=file_get_contents('template.html');
+if(!empty($output['template'])&&is_array($output['template']){
+	foreach($output['template'] as $key=>$value){
+		$template=str_replace('{{!'.$key.'}}',$value,$template);
+	}
+}
