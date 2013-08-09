@@ -1,6 +1,7 @@
 <?php
 // Parse $_GET['request'] to get the request parameters
-$request=preg_replace('/[^a-zA-Z0-9\/\-]/','',$_GET['request']);
+$request=strtolower($_GET['request']);
+$request=preg_replace('/[^a-z0-9\/\-]/','',$request);
 $request=explode('/',$request,127);
 $request=array_filter($request);
 if(empty($request)){
