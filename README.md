@@ -33,6 +33,8 @@ Filesystem Structure
  
  * `/template.html` The HTML template for each page
  
+ * `/errorTemplate.html` HTML template for error pages
+ 
  * `/index.php` Code for the controller
  
  * `/content/` Main content directory

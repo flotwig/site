@@ -12,8 +12,7 @@ if(file_exists('./modules/'.$request[0].'.php')){
 	require_once('./modules/'.$request[0].'.php');
 	$output=call_user_func_array($request[0].'Output',array($request));
 	if(!$output){
-		// TODO: handle 500
-		die();
+		giveError(500,'Internal Server Error');
 	}
 }else{
 	// TODO: handle 404
@@ -21,8 +20,16 @@ if(file_exists('./modules/'.$request[0].'.php')){
 }
 // Put the output into a template
 $template=file_get_contents('template.html');
-if(!empty($output['template'])&&is_array($output['template']){
+if(!empty($output['template'])&&is_array($output['template'])){
 	foreach($output['template'] as $key=>$value){
 		$template=str_replace('{{!'.$key.'}}',$value,$template);
 	}
+}
+// Error function
+function giveError(int $code,string $message=''){
+	$template=file_get_contents('errorTemplate.html');
+	$template=str_replace('{{!code}}',(string)$code,$template);
+	$template=str_replace('{{!message}}',$message,$template);
+	echo $template;
+	die();
 }
