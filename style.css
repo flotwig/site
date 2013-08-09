@@ -1,0 +1,33 @@
+body {
+	font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 70px;
+	font-size: 13px;
+	background-color:#efefef;
+	color:#4a4a4a;
+}
+h1{
+	color:#0099cc;
+}
+h1 span{
+	color:#33b5e5;
+}
+#menu ul{
+	list-style-type: none;
+}
+#menu ul li{
+	float:left;
+	text-align:center;
+	margin-right:20px;
+	padding:2px;
+}
+#footer{
+	opacity:0.3;
+}
+a{
+	text-decoration:none;
+	color:#16a5d7;
+}
+a:hover{
+	text-decoration:underline;
+	color:#10789c;
+}
