@@ -2,9 +2,18 @@
 <html>
 	<head>
 		<title>Error: {{!code}} {{!message}}</title>
+		<link rel="stylesheet" type="text/css" href="/style.css">
 	</head>
 	<body>
-		<h1>{{!code}} {{!message}}</h1>
-			Please recheck the URL you entered or try again later.
+		<div id="content">
+			<div id="header">
+				<h1><span>error/</span>{{!code}}</h1>
+			</div>
+			<br/><br/>
+			<div id="stuff">
+				<h2>{{!code}} {{!message}}</h2>
+				Please recheck the URL you entered or try again later.
+			</div>
+		</div>
 	</body>
 </html>
