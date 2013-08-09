@@ -29,6 +29,8 @@ Filesystem Structure
 
  * `/README.md` This file
  
+ * `/vhost.conf` The nginx config include to set up caching, rewrites, etc.
+ 
  * `/index.php` Code for the controller
  
  * `/content/` Main content directory
