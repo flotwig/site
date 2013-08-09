@@ -7,13 +7,32 @@ Goals
 -----
 
  * Be concise
+ 
  * Be efficient
+ 
  * Be secure
+ 
  * Be functional
  
 To achieve these ends, this project will:
 
  * Query the filesystem as little as possible
+ 
  * Avoid extraneous output
+ 
  * Enforce reasonable client-side caching whenever possible
+ 
  * Take minimal user input, and never directly use user input
+ 
+Filesystem Structure
+-----
+
+ * `/README.md` This file
+ 
+ * `/index.php` Code for the controller
+ 
+ * `/content/` Main content directory
+ 
+ * `/modules/` PHP files to handle requests to the controller
+ 
+ * `/libs/` Third party libraries
