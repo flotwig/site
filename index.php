@@ -26,6 +26,7 @@ if(!empty($output['template'])&&is_array($output['template'])){
 }
 // Error function
 function giveError($code,$message){
+	http_response_code($code);
 	$template=file_get_contents('errorTemplate.html');
 	$template=str_replace('{{!code}}',(string)$code,$template);
 	$template=str_replace('{{!message}}',$message,$template);
