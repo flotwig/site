@@ -7,9 +7,10 @@ $request=array_filter($request);
 if(empty($request)){
 	$request[0]='blog';
 }
+$request=array_merge($request);
 // Load the module specified
-if(file_exists('./modules/'.$request[0].'.php')){
-	require_once('./modules/'.$request[0].'.php');
+if(file_exists('modules/'.$request[0].'.php')){
+	require_once('modules/'.$request[0].'.php');
 	$output=call_user_func_array($request[0].'Output',array($request));
 	if(!$output){
 		giveError(500,'Internal Server Error');
@@ -24,6 +25,7 @@ if(!empty($output['template'])&&is_array($output['template'])){
 		$template=str_replace('{{!'.$key.'}}',$value,$template);
 	}
 }
+echo $template;
 // Error function
 function giveError($code,$message){
 	http_response_code($code);
