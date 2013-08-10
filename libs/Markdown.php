@@ -10,7 +10,7 @@
 # Copyright (c) 2004-2006 John Gruber  
 # <http://daringfireball.net/projects/markdown/>
 #
-namespace Michelf;
+//namespace Michelf;
 
 
 #
@@ -1519,12 +1519,12 @@ class Markdown {
 # Currently the implementation of of Extra resides here in this temporary class.
 # This makes it easier to propagate the changes between the three different
 # packaging styles of PHP Markdown. When this issue is resolved, this
-# MarkdownExtra_TmpImpl class here will disappear and \Michelf\MarkdownExtra
-# will contain the code. So please use \Michelf\MarkdownExtra and ignore this
+# MarkdownExtra_TmpImpl class here will disappear and MarkdownExtra
+# will contain the code. So please use MarkdownExtra and ignore this
 # one.
 #
 
-class _MarkdownExtra_TmpImpl extends \Michelf\Markdown {
+class _MarkdownExtra_TmpImpl extends Markdown {
 
 	### Configuration Variables ###
 
