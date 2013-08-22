@@ -24,8 +24,9 @@ function blogOutput($request){
 	}elseif(array_key_exists($request[1],$blogs)){
 		require_once('libs/Markdown.php');
 		return array('template'=>array(
-			'content'=>Markdown::defaultTransform(file_get_contents('content/blog/'.$request[1].'.md')),
-			'title'  =>$blogs[$request[1]][1]));
+			'title'  =>$blogs[$request[1]][1],
+			'content'=>'<h2>'.$blogs[$request[1]][1].'</h2>
+			'.Markdown::defaultTransform(file_get_contents('content/blog/'.$request[1].'.md'))));
 		// TODO: support blog comments
 	}else{
 		giveError(404,'Blog Post Not Found');
