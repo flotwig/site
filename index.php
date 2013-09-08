@@ -1,12 +1,12 @@
 <?php
 // Parse $_GET['request'] to get the request parameters
-$homePage='page/main';
+$homePage=array('page','main');
 $request=strtolower($_GET['request']);
 $request=preg_replace('/[^a-z0-9\/\-]/','',$request);
 $request=explode('/',$request,127);
 $request=array_filter($request);
 if(empty($request)){
-	$request[0]=$homePage;
+	$request=$homePage;
 }
 $request=array_merge($request);
 // Load the module specified
