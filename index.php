@@ -33,6 +33,12 @@ function giveError($code,$message){
 	$template=file_get_contents('errorTemplate.html');
 	$template=str_replace('{{!code}}',(string)$code,$template);
 	$template=str_replace('{{!message}}',$message,$template);
+	$referredHost=parse_url($_SERVER['HTTP_REFERER'],PHP_URL_HOST);
+	if($referredHost==$_SERVER['SERVER_NAME']){
+		$template=str_replace('{{!backlink}}',htmlentities($_SERVER['HTTP_REFERER']),$template);
+	}else{
+		$template=str_replace('{{!backlink}}','javascript:window.history.back();',$template);
+	}
 	echo $template;
 	die();
 }
