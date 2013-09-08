@@ -6,7 +6,7 @@ function pageOutput($request){
 		$title=explode("\n",$content);
 		$title=$title[0];
 		return array('template'=>array(
-			'title'  =>$title;
+			'title'  =>$title,
 			'content'=>Markdown::defaultTransform($content)));
 	}else{
 		giveError(404,'Not Found');
