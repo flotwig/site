@@ -1,4 +1,5 @@
 <?php
+define('START',microtime(true));
 // Parse $_GET['request'] to get the request parameters
 $homePage=array('page','main');
 $request=strtolower($_GET['request']);
@@ -21,6 +22,7 @@ if(file_exists('modules/'.$request[0].'.php')){
 }
 // Put the output into a template
 $template=file_get_contents('template.html');
+$output['template']['buildtime']=(microtime(true)-START)*1000; // execution time in milliseconds
 if(!empty($output['template'])&&is_array($output['template'])){
 	foreach($output['template'] as $key=>$value){
 		$template=str_replace('{{!'.$key.'}}',$value,$template);
@@ -33,7 +35,7 @@ function giveError($code,$message){
 	$template=file_get_contents('errorTemplate.html');
 	$template=str_replace('{{!code}}',(string)$code,$template);
 	$template=str_replace('{{!message}}',$message,$template);
-	$referredHost=parse_url($_SERVER['HTTP_REFERER'],PHP_URL_HOST);
+	$referredHost=parse_url($_SERVER['HTTP_REFERER'],PHP_URL_HOST); // this line ansd the next five lines to prevent backlink injection
 	if($referredHost==$_SERVER['SERVER_NAME']){
 		$template=str_replace('{{!backlink}}',htmlentities($_SERVER['HTTP_REFERER']),$template);
 	}else{
