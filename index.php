@@ -2,10 +2,14 @@
 define('START',microtime(true));
 // Parse $_GET['request'] to get the request parameters
 $homePage=array('page','main');
-$request=strtolower($_GET['request']);
-$request=preg_replace('/[^a-z0-9\/\-]/','',$request);
-$request=explode('/',$request,127);
-$request=array_filter($request);
+if(array_key_exists('request',$_GET)){
+	$request=strtolower($_GET['request']);
+	$request=preg_replace('/[^a-z0-9\/\-]/','',$request);
+	$request=explode('/',$request,127);
+	$request=array_filter($request);
+}else{
+	$request=array();
+}
 if(empty($request)){
 	$request=$homePage;
 }
