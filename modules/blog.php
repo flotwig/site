@@ -8,7 +8,6 @@ function blogOutput($request){
 		$blogs[$blog[1]]=array($blog[0],$blog[2]);
 	}
 	if (empty($request[1])){
-		// TODO: display blog posts in some pleasing way :(
 		$content='<table id="blogPosts">';
 		foreach($blogs as $machineName=>$blogPost){
 			$content.='<tr>
@@ -27,7 +26,6 @@ function blogOutput($request){
 			'title'  =>$blogs[$request[1]][1],
 			'content'=>'<h2>'.$blogs[$request[1]][1].'</h2>
 			'.Markdown::defaultTransform(file_get_contents('content/blog/'.$request[1].'.md'))));
-		// TODO: support blog comments
 	}else{
 		giveError(404,'Blog Post Not Found');
 	}
