@@ -39,7 +39,7 @@ function giveError($code,$message){
 	$template=file_get_contents('errorTemplate.html');
 	$template=str_replace('{{!code}}',(string)$code,$template);
 	$template=str_replace('{{!message}}',$message,$template);
-	$referredHost=parse_url($_SERVER['HTTP_REFERER'],PHP_URL_HOST); // this line ansd the next five lines to prevent backlink injection
+	$referredHost=parse_url($_SERVER['HTTP_REFERER'],PHP_URL_HOST); // this line and the next five lines to prevent backlink injection
 	if($referredHost==$_SERVER['SERVER_NAME']){
 		$template=str_replace('{{!backlink}}',htmlentities($_SERVER['HTTP_REFERER']),$template);
 	}else{
