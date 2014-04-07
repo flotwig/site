@@ -1,7 +1,7 @@
 <?php
 define('START',microtime(true));
 // Parse $_GET['request'] to get the request parameters
-$homePage=array('page','main');
+$homePage=array('blog');
 if(array_key_exists('request',$_GET)){
 	$request=strtolower($_GET['request']);
 	$request=preg_replace('/[^a-z0-9\/\-]/','',$request);
