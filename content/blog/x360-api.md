@@ -1,5 +1,0 @@
-A few days ago, I was interested in making a website that would allow Xbox Live members to easily form and manage clans or guilds or what have you without very much trouble. Unfortunately, Microsoft has (of course) closed off access to useful APIs to those chosen few who are both rich enough to pay the fees and lucky enough to be accepted by Microsoft. Knowing that I was neither of those, I set out to create a third-party API created by using content-scraping techniques. Not the best of solutions, but I think it'll be as far as I will get. So without further ado, I introduce the Xbox 360 Gamertag API.
-
-To access it is simple. Just request *http://360api.chary.us/?gamertag=**flotwig*** and parse the returned JSON string. Obviously, you can change the gamertag to another easily. You can also specify a *callback* parameter to get a JSONP callback returned.
-
-P.S. Sorry about the lack of an XML response format, it's just too much of a headache. If anybody has an easy solution to turn a PHP array into valid and easy to read XML, I'd like to hear it.
