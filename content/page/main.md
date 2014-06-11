@@ -1,3 +1,0 @@
-Home
-
-Lorum ipsum dolor
