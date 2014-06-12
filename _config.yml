@@ -8,6 +8,7 @@ url: "http://chary.us"
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:title.html
-paginate: 10
-highlighter: pygments
+permalink: /blog/:year/:month/:title.html
+paginate: 3
+paginate_path: /blog/:num
+highlighter: rouge
