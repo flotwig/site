@@ -5,7 +5,7 @@ date:   2013-11-10 00:00:00
 categories: nerf
 ---
 
-![A badass Nerf gun](http://overflod.chary.us/static/images/nerf-rayven.jpg)
+![A badass Nerf gun](/images/nerf-rayven.jpg)
 
  This gun pictured above is not your typical Nerf blaster. It's modified to run at 3.75x the standard voltage, making it very powerful and very painful. It runs at 22.5 volts, a considerable increase from the stock voltage of 6.
 

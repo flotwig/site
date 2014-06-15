@@ -5,7 +5,7 @@ date:   2014-06-06 09:20:22
 categories: irc statistics
 ---
 
-![The Statistics bot in action](http://overflod.chary.us/static/images/stats.png)
+![The Statistics bot in action](/images/stats.png)
 
 Those familiar with IRC have probably seen Rizon's Stats bot in action. That bot will join a channel if commanded to do so by the channel founder and generate statistics using [pisg](http://pisg.sourceforge.net).
 
