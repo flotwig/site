@@ -5,6 +5,18 @@ email: zbloomq@live.com
 description: "No loafing."
 baseurl: ""
 url: "http://chary.us"
+navigation:
+- name: Home
+  url: /
+  purl: /index.html
+- name: Archives
+  url: /archives
+  purl: /archives/index.html
+- name: About
+  url: /about
+  purl: /about/
+- name: GitHub
+  url: https://github.com/flotwig
 
 # Build settings
 markdown: kramdown
