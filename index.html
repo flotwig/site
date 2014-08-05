@@ -1,49 +1,21 @@
 ---
 layout: default
-title: chary.us
+title: chary.us projects
 ---
 
-{% for post in paginator.posts %}
-
-	<article class="post">
-
-		{% if post.external-url %}
-			<h3>
-				<a href="{{ post.external-url }}">{{ post.title }}</a>
-				<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-			</h3>
-		{% else %}
-			<h3><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %d, %Y" }}</small></h3>
-		{% endif %}
-
-		<div class="post-content">{{ post.content }}</div>
-
-	</article>
-
-{% endfor %}
-
-
-
-{% if paginator.total_pages > 1 %}
-	<ul class="pager">
-
-		{% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-				<li class="previous"><a class="prev left" href="/">&larr; Newer</a></li>
-			{% else %}
-				<li class="previous"><a class="prev left" href="/blog/{{paginator.previous_page}}/">&larr; Newer</a></li>
-			{% endif %}
-		{% else %}
-			<li class="previous disabled"><span>&larr; Newer</span></li>
-		{% endif %}
-
-		<li>Page {{ paginator.page }} of {{ paginator.total_pages }}</li>
-
-		{% if paginator.next_page %}
-			<li class="next"><a class="next right" href="/blog/{{paginator.next_page}}/">Older &rarr;</a></li>
-		{% else %}
-			<li class="next"><span class="nope right">Older &rarr;</span></li>
-		{% endif %}
-
-	</ul>
-{% endif %}
+{% assign projects = site.data.projects | sort: "name" %}
+<ul>
+{% sorted_for project in projects sort_by:year reversed %}
+	<li>
+		<span class="text-primary">{% if project.link %}<a class="text-primary" href="{{ project.link }}">{% endif %}{{ project.name }}{% if project.link %}</a>{% endif %}</span>
+		<small class="text-muted pull-right">
+		{% if project.terrible %}<span class="text-danger" title="We've all written bad code before, right?">Here be dragons</span> - {% endif %}
+		{% if project.defunct %}<span class="text-danger" title="No longer in operation.">Defunct</span> - {% endif %}
+		{{ project.language }}
+		{% if project.year %} - {{ project.year }}{% endif %}
+		{% if project.source %} - <a href="{{ project.source }}">Open source</a>{% else %}
+		- <span class="text-warning">Closed source</span>{% endif %}
+		</small><br/>
+		{{ project.description }}
+	</li>
+{% endsorted_for %}
