@@ -15,7 +15,7 @@ navigation:
 - name: Archives
   url: /archives
   slug: archives
-- name: About
+- name: About &amp; Contact
   url: /about
   slug: about
 - name: GitHub
