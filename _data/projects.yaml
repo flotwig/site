@@ -1,0 +1,80 @@
+---
+  - 
+    name: "Xbox 360 Gamercard Generator"
+    language: "PHP"
+    year: 2011
+    description: "Generates graphics depicting statistics for Xbox gamers using GD and web scraping technologies."
+    link: "http://za.chary.us/projects/webtools/"
+    source: "https://github.com/flotwig/gamercard"
+  - 
+    name: "Xbox 360 Gamertag API"
+    language: "Python"
+    year: 2012
+    description: "A JSON API for accessing the information of Xbox gamers. My first application to use Google's App Engine and my first Python app."
+    link: "http://360api.chary.us/"
+    source: "https://github.com/flotwig/360api-gae"
+  - 
+    name: "Cloud-Hits"
+    language: "PHP"
+    year: 2011
+    description: "A traffic exchanger for the SoundCloud platform. Entirely automatic, built in Javascript and PHP. Made extensive use of fraud detection and SoundCloud APIs."
+    defunct: true
+  - 
+    name: "SiteSense"
+    language: "PHP"
+    year: 2012
+    description: "A content management system and ecommerce platform built to maximize security, speed, and simplicity of implementation. Also built proprietary extensions which leveraged shipping, credit card, and version control APIs."
+    source: "https://github.com/FullAmbit/SiteSense"
+  -
+    name: "spoofident"
+    language: "Python"
+    year: 2014
+    description: "A RFC-compliant ident daemon which spoofs ident responses for the purpose of increasing a system's security. Secure, stable, and low in resource consumption."
+    link: "http://chary.us/blog/2014/06/spoofident.html"
+    source: "https://github.com/flotwig/spoofident"
+  -
+    name: "chary.us"
+    language: "Liquid, Markdown"
+    year: 2014
+    description: "This site! Built using Jekyll and very sparing amounts of client-side Javascript. \"Designed\" in Twitter Bootstrap. I'm no designer."
+    link: "http://chary.us"
+    source: "https://github.com/flotwig/site"
+  -
+    name: "WebTools"
+    language: "PHP"
+    year: 2011
+    description: "A simple suite of basic website utilities, including a WHOIS utility, DNS record lookups, a HTTP header viewer, and other features. Built to be modular by 2011 standards."
+    link: "http://za.chary.us/projects/webtools/"
+    source: "https://github.com/flotwig/webtools"
+  -
+    name: "StatsBot"
+    language: "PHP"
+    year: 2014
+    description: "A small program which helps ops on Internet Relay Chat generate fun statistics about user activity. Glues together IRC and pisg, essentially. 50 channels and growing."
+    link: "https://chanstats.snoonet.org"
+    source: "https://github.com/flotwig/StatsBot/"
+  -
+    name: "upmon"
+    language: "PHP"
+    year: 2012
+    description: "A web application coupled with a cronjob which monitors servers and checks if they are up and responding. Very basic, only supports HTTP(S), fsockopen, and Minecraft checks."
+    source: "https://github.com/flotwig/upmon"
+  -
+    name: "NiftyHost.us"
+    language: "PHP"
+    year: 2010
+    description: "Now defunct, NiftyHost.us was a web hosting provider which served thousands of independent users concurrently."
+    defunct: true
+  -
+    name: "QR Code Generator"
+    language: "PHP"
+    year: 2011
+    description: "A QR code generation website I built. Can generate all sorts of QR codes - calendar events, contact information. Can make custom colored QR codes and ones with images in the middle."
+    link: "http://clients.chary.us/qr/"
+  -
+    name: "suphpbot"
+    language: "PHP"
+    year: 2011
+    description: "A modular, procedural IRC bot written in PHP. Yes, it's as bad as it sounds. Some of the worst code I've ever written, and also some of the most fun code I've ever written. A case study in bad PHP."
+    source: "https://github.com/flotwig/suphpbot"
+    terrible: 1
