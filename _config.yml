@@ -8,13 +8,16 @@ url: "http://chary.us"
 navigation:
 - name: Home
   url: /
-  purl: /index.html
+  slug: index.html
+- name: Blog
+  url: /blog
+  slug: blog
 - name: Archives
   url: /archives
-  purl: /archives/index.html
+  slug: archives
 - name: About
   url: /about
-  purl: /about/
+  slug: about
 - name: GitHub
   url: https://github.com/flotwig
 

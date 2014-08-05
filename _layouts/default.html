@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="page-header">
+			<div class="page-header" onclick="window.location = '/'">
 				<h1>{{ site.name }} <small>{{ site.description }}</small></h1>
 			</div>
 			<div class="row">
@@ -26,7 +26,8 @@
 					<nav>
 						<div class="list-group">
 							{% for nav in site.navigation %}
-							<a class="list-group-item{% if nav.purl == page.url %} active{% endif %}" href="{{ nav.url }}">{{ nav.name }}</a>
+							{% assign root_dir = page.url | remove_first: '/' | split: '/' | first %}
+							<a class="list-group-item{% if root_dir == nav.slug %} active{% endif %}" href="{{ nav.url }}">{{ nav.name }}</a>
 							{% endfor %}
 						</div>
 					</nav>
