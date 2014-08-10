@@ -18,6 +18,8 @@ navigation:
 - name: About &amp; Contact
   url: /about
   slug: about
+- name: Subscribe
+  url: http://feeds.feedburner.com/charyusblog
 - name: GitHub
   url: https://github.com/flotwig
 
