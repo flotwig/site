@@ -1,0 +1,11 @@
+--2016-02-14 06:43:14--  http://i.imgur.com/IjFpscT.png
+Resolving i.imgur.com (i.imgur.com)... 23.235.46.193
+Connecting to i.imgur.com (i.imgur.com)|23.235.46.193|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4802 (4.7K) [image/png]
+Saving to: ‘IjFpscT.png’
+
+     0K ....                                                  100%  556M=0s
+
+2016-02-14 06:43:14 (556 MB/s) - ‘IjFpscT.png’ saved [4802/4802]
+

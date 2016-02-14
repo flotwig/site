@@ -1,0 +1,11 @@
+--2016-02-14 06:43:05--  http://i.imgur.com/QXnAz7w.png
+Resolving i.imgur.com (i.imgur.com)... 23.235.46.193
+Connecting to i.imgur.com (i.imgur.com)|23.235.46.193|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 42362 (41K) [image/png]
+Saving to: ‘QXnAz7w.png’
+
+     0K .......... .......... .......... .......... .         100% 3.16M=0.01s
+
+2016-02-14 06:43:05 (3.16 MB/s) - ‘QXnAz7w.png’ saved [42362/42362]
+
