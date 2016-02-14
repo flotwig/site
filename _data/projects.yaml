@@ -36,7 +36,7 @@
     name: "chary.us"
     language: "Liquid, Markdown"
     year: 2014
-    description: "This site! Built using Jekyll and very sparing amounts of client-side Javascript. \"Designed\" in Twitter Bootstrap. I'm no designer."
+    description: "This site! Built using Jekyll and very sparing amounts of client-side Javascript. Originally designed in Twitter Bootstrap. Redesigned in custom HTML/CSS in 2016."
     link: "http://chary.us"
     source: "https://github.com/flotwig/site"
   -
