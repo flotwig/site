@@ -1,6 +1,6 @@
 # Site settings
-name: chary.us
-title: chary.us
+name: Zach Bloomquist
+title: Zach Bloomquist
 email: zbloomq@live.com
 description: "No loafing."
 baseurl: ""
@@ -22,6 +22,9 @@ navigation:
   url: http://feeds.feedburner.com/charyusblog
 - name: GitHub
   url: https://github.com/flotwig
+collections:
+  notes:
+    output: true
 
 # Build settings
 markdown: kramdown
@@ -29,3 +32,4 @@ permalink: /blog/:year/:month/:title.html
 paginate: 3
 paginate_path: /blog/:num
 highlighter: pygments
+

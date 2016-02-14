@@ -1,5 +1,12 @@
 ---
   - 
+    name: "Snoonet"
+    year: 2015
+    start: 2012
+    description: "An IRC network for redditors. Currently serving almost 3,000 users concurrently."
+    link: "https://snoonet.org/"
+    source: "https://github.com/SnoonetIRC"
+  - 
     name: "Xbox 360 Gamercard Generator"
     language: "PHP"
     year: 2011

@@ -1,0 +1,65 @@
+---
+  - 
+    time: "Friday, August 15th, 2014 (11:21)"
+    from: "Zach (me)"
+    content: "Hi,
+
+I purchased this service this morning and it is still inaccessible. I have not received an e-mail with access information.
+
+Yours,
+Zach"
+  - 
+    time: "Friday, August 15th, 2014 (13:45)"
+    from: "James Burkowitz (staff)"
+    content: "Hello
+
+Please check now . "
+  - 
+    time: "Friday, August 15th, 2014 (15:38)"
+    from: "Zach "
+    content: "Still won't boot, still no activation e-mail. Client area says \"Virtual server not found\" now."
+  - 
+    time: "Friday, August 15th, 2014 (19:38)"
+    from: "James Burkowitz"
+    content: "Hello,
+
+We have checked and your VPS is up and working fine. You are getting this error due to some temporary problem on server. It will get resolved soon. This will not effect on functionality of your 
+
+vps.
+"
+    note: "\"Your server's down, so everything is working as expected.\" It took *four hours* for ChicagoVPS to tell me that my service is \"working fine\". Guess what? It's still down."
+  - 
+    time: "Friday, August 15th, 2014 (19:49)"
+    from: "Zach "
+    content: "It's not up. SSH is inaccessible, HTTP is down, SolusVM link seems to be non existent. I am going to chargeback unless this is resolved soon. The hostname on the account does not point to ChicagoVPS currently, I am waiting for my ChicagoVPS to become available. The IP address allocated to me, 198.46.148.192, is down. And for some reason, this ticket has a different IP address attached to it than the IP address attached to my service."
+  - 
+    time: "Friday, August 15th, 2014 (22:41)"
+    from: "James Burkowitz"
+    content: "Hello,
+
+Should we setup new server for you?"
+    note: "**New server?!** Well, I'd prefer the server I paid for almost a day ago, but at this point I'll take anything..."
+  - 
+    time: "Saturday, August 16th, 2014 (07:58)"
+    from: "Zach "
+    content: "Please set up the service I ordered. Thanks."
+  - 
+    time: "Saturday, August 16th, 2014 (11:20)"
+    from: "Zach "
+    content: "I am filing a chargeback at the end of the business day today unless my service is enabled.
+
+Yours,
+Zach"
+    note: "Threatening a chargeback is a low thing to do, but at this point I just want to get my service which I ordered over 24 hours ago up and running."
+  - 
+    time: "Saturday, August 16th, 2014 (11:28)"
+    from: "James Burkowitz"
+    content: "Hello,
+
+Please make sure after this process your data will be lot. Please advise. "
+    note: "Evidently, my threat worked, finally got a timely response. Also, what's up with the poor English in support replies? Aren't helpdesk hires supposed to be literate?"
+  - 
+    time: "Saturday, August 16th, 2014 (11:30)"
+    from: "Zach "
+    content: "At no point has my service with ChicagoVPS been bootable or in any way functional, so I'm not sure how I'd lose any data."
+    note: "You can hear the facepalm."
