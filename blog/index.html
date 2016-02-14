@@ -21,25 +21,25 @@ title: chary.us blog
 
 
 {% if paginator.total_pages > 1 %}
-	<ul class="pager">
+	<div class="section align-center">
 
 		{% if paginator.previous_page %}
 			{% if paginator.page == 2 %}
-				<li class="previous"><a class="prev left" href="/blog/">&larr; Newer</a></li>
+				<span class="previous pull-left"><a class="prev left" href="/blog/">&larr; Newer</a></span>
 			{% else %}
-				<li class="previous"><a class="prev left" href="/blog/{{paginator.previous_page}}/">&larr; Newer</a></li>
+				<span class="previous pull-left"><a class="prev left" href="/blog/{{paginator.previous_page}}/">&larr; Newer</a></span>
 			{% endif %}
 		{% else %}
-			<li class="previous disabled"><span>&larr; Newer</span></li>
+			<span class="previous disabled pull-left"><span>&larr; Newer</span></span>
 		{% endif %}
 
-		<li>Page {{ paginator.page }} of {{ paginator.total_pages }}</li>
+		<span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
 		{% if paginator.next_page %}
-			<li class="next"><a class="next right" href="/blog/{{paginator.next_page}}/">Older &rarr;</a></li>
+			<span class="next pull-right"><a class="next right" href="/blog/{{paginator.next_page}}/">Older &rarr;</a></span>
 		{% else %}
-			<li class="next"><span class="nope right">Older &rarr;</span></li>
+			<span class="next pull-right"><span class="nope right">Older &rarr;</span></span>
 		{% endif %}
 
-	</ul>
+	</div>
 {% endif %}
