@@ -1,4 +1,22 @@
 ---
+  -
+    name: "NagMe"
+    year: 2016
+    language: "Java"
+    description: "A productivity app that actually helps you to be productive."
+    source: "https://github.com/flotwig/NagMe"
+  -
+    name: "flomon"
+    year: 2016
+    language: "PHP"
+    description: "A full server and application monitoring system written in Laravel and PHP."
+    source: "https://github.com/flotwig/flomon"
+  -
+    name: "Room App"
+    year: 2015
+    language: "Java"
+    description: "Room is a crowd-sourced DJing app that allows a room of people to choose the music playing as opposed to a singular DJ choosing the song."
+    link: "https://play.google.com/store/apps/details?id=com.room"    
   - 
     name: "Snoonet"
     year: 2015
