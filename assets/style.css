@@ -131,3 +131,8 @@ a.bracket {
     content: ">";
     padding-left:1px;
 }
+#disqus_thread {
+    background-color:#ECEFF1;
+    border-radius:1em;
+    padding:1em;
+}
