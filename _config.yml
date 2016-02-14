@@ -1,10 +1,10 @@
 # Site settings
-name: chary.us
+name: Zach Bloomquist
 title: chary.us
-email: zbloomq@live.com
+email: z@chary.us
 description: "No loafing."
 baseurl: ""
-url: "http://chary.us"
+url: "https://chary.us"
 navigation:
 - name: Home
   url: /
