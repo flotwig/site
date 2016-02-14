@@ -1,22 +1,39 @@
 ---
 layout: default
-title: chary.us projects
+title: Home
 ---
 
-{% assign projects = site.data.projects | sort: "name" %}
-<ul>
-{% sorted_for project in projects sort_by:year reversed %}
-	<li>
-		<span class="text-primary">{% if project.link %}<a class="text-primary" href="{{ project.link }}">{% endif %}{{ project.name }}{% if project.link %}</a>{% endif %}</span>
-		<small class="text-muted pull-right">
-		{% if project.terrible %}<span class="text-danger" title="We've all written bad code before, right?">Here be dragons</span> - {% endif %}
-		{% if project.defunct %}<span class="text-danger" title="No longer in operation.">Defunct</span> - {% endif %}
-		{{ project.language }}
-		{% if project.year %} - {{ project.year }}{% endif %}
-		{% if project.source %} - <a href="{{ project.source }}">Open source</a>{% else %}
-		- <span class="text-warning">Closed source</span>{% endif %}
-		</small><br/>
-		{{ project.description }}
-	</li>
-{% endsorted_for %}
-</ul>
+<div class="section">
+	<p class="fancy"><span>Who I Am</span></p>
+	Hi! I'm Zach. I build things on the Internet. You can reach me at <a href="mailto:z@chary.us">z@chary.us</a>.
+</div>
+<div class="section">
+	<p class="fancy"><span>Recent Projects</span></p>
+	<div class="project project-inner">
+		<img src="/images/room.png" alt=""/>
+		<a href="https://play.google.com/store/apps/details?id=com.room"><span>Room App</span></a>
+		Room was a hackathon project which a company picked up and supported the further development of for
+		their developer relations booth at CES 2016. It's a crowd-sourced DJing app that allows a room of
+		people to choose the music playing as opposed to a singular DJ choosing the song. We built it for
+		Android and iOS using Parse as the backend API. It won first prize in a section of the hackathon.
+	</div>
+	<div class="project project-inner">
+		<img src="http://i.imgur.com/IjFpscT.png" alt=""/>
+		<a href="https://play.google.com/store/apps/details?id=com.room"><span>flomon</span></a>
+		flomon is a comprehensive server and application monitor. It is controlled by a secure web-based
+		frontend written in PHP and Laravel. This is my first real Laravel project. It can monitor HTTP, it
+		can execute commands on servers, and it requires no agent to do these tasks. This makes it very
+		lightweight on resources and very simple to operate with multiple distributed servers.
+	</div>
+	<div class="project">
+		<img src="http://i.imgur.com/QXnAz7w.png" alt=""/>
+		<a href="https://play.google.com/store/apps/details?id=com.room"><span>NagMe</span></a>
+		NagMe is a task management app which reminds you to complete tasks based on your availability. It
+		compares your calendar availability to the time estimates you assign to your tasks and will
+		repeatedly nag you to finish the task when you have free time. Tasks are prioritized by due date.
+		This is the first Android app I've made that is entirely my own development.
+	</div>
+</div>
+<div class="section align-center">
+	<a href="/projects" class="bracket"><u>View More Projects</u></a>
+</div>

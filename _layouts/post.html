@@ -1,22 +1,16 @@
 ---
 layout: default
 ---
-<article class="post">
-
-	{% if page.external-url %}
-		<h3>
-			<a href="{{ page.external-url }}">{{ page.title }}</a> 
-			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
-		</h3>
-	{% else %}
-		<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-	{% endif %}
-
+<div class="section">
+	<p class="fancy">
+		<span>
+			<a href="{{ page.url }}">{{ page.title }}</a>
+		</span>
+	</p>
 	<div class="post-content">{{ content }}</div>
 
-	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
-
-</article>
+	<p class="meta">Posted on <span>{{ page.date | date: "%b %d, %Y" }}</span></p>
+</div>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

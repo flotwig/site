@@ -1,42 +1,39 @@
-<!doctype html>
-<html>
-	<head>
-		<title>{{ page.title }}</title>
-		<link rel="stylesheet" href="/assets/style.css">
-		<link rel="alternate" type="application/rss+xml" title="chary.us blog" href="https://chary.us/feed.xml">
-	</head>
-	<body>
-		<div class="container">
-			<div class="page-header" onclick="window.location = '/'">
-				<h1>{{ site.name }} <small>{{ site.description }}</small></h1>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					{{ content }}
-				</div>
-				<div class="col-md-4">
-					<form action="/search.html" method="GET">
-						<div class="input-group">
-							<input type="text" class="form-control" name="query">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">Search</button>
-							</span>
-						</div>
-					</form>
-					<br/>
-					<nav>
-						<div class="list-group">
-							{% for nav in site.navigation %}
-							{% assign root_dir = page.url | remove_first: '/' | split: '/' | first %}
-							<a class="list-group-item{% if root_dir == nav.slug %} active{% endif %}" href="{{ nav.url }}">{{ nav.name }}</a>
-							{% endfor %}
-						</div>
-					</nav>
-				</div>
-			</div>
-			<div class="page-footer">
-				&copy;{{ site.time | date: '%Y' }} {{ site.name }}
-			</div>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.name}} :: {{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One|Source+Sans+Pro:400,600" rel="stylesheet" type="text/css"/>
+    <link rel="alternate" type="application/rss+xml" title="chary.us blog" href="https://chary.us/feed.xml">
+    <link rel="stylesheet" href="/assets/style.css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="name" class="section">
+                <a href="/"><h1>Zach Bloomquist</h1></a>
+            </div>
+            <div id="links">
+                <a class="linklet" href="https://github.com/flotwig">
+                    <img src="/assets/icons/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+                <!--<a class="linklet" href="/blog">
+                    <img src="/assets/icons/blog.png" alt="Blog">
+                    <span>Blog</span>
+                </a>-->
+                <a class="linklet" href="https://linkedin.com/in/zbloomq">
+                    <img src="/assets/icons/in.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+        <div id="body" class="section">
+            {{ content }}
+        </div>
+        <div id="footer" class="section">
+            &copy;{{ site.time | date: '%Y' }} Zach Bloomquist. The "in" mark is a registered trademark of LinkedIn.
+        </div>
+    </div>
+</body>
 </html>
