@@ -1,0 +1,35 @@
+# Site settings
+name: Zach Bloomquist
+title: Zach Bloomquist
+email: z@chary.us
+description: "No loafing."
+baseurl: ""
+url: "https://chary.us"
+navigation:
+- name: Home
+  url: /
+  slug: index.html
+- name: Blog
+  url: /blog
+  slug: blog
+- name: Archives
+  url: /archives
+  slug: archives
+- name: About &amp; Contact
+  url: /about
+  slug: about
+- name: Subscribe
+  url: http://feeds.feedburner.com/charyusblog
+- name: GitHub
+  url: https://github.com/flotwig
+collections:
+  notes:
+    output: true
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:title.html
+paginate: 3
+paginate_path: /blog/:num
+highlighter: pygments
+

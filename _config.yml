@@ -1,35 +1,28 @@
-# Site settings
+
+title: chary.us
+url: 'https://chary.us'
+baseurl: '' #change it according to your repository name
+
+
+# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
+style: styles-2
+#style: styles-3
+#style: styles-4
+#style: styles-5
+#style: styles-6
+
+
+#Profile information
 name: Zach Bloomquist
-title: Zach Bloomquist
+tagline: Student
+pic: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+#sidebar links
 email: z@chary.us
-description: "No loafing."
-baseurl: ""
-url: "https://chary.us"
-navigation:
-- name: Home
-  url: /
-  slug: index.html
-- name: Blog
-  url: /blog
-  slug: blog
-- name: Archives
-  url: /archives
-  slug: archives
-- name: About &amp; Contact
-  url: /about
-  slug: about
-- name: Subscribe
-  url: http://feeds.feedburner.com/charyusblog
-- name: GitHub
-  url: https://github.com/flotwig
-collections:
-  notes:
-    output: true
+phone: 012 345 6789
+website: chary.us/blog
+linkedin: zbloomq
+github: flotwig
+#twitter: '@webjeda'
 
-# Build settings
-markdown: kramdown
-permalink: /blog/:year/:month/:title.html
-paginate: 3
-paginate_path: /blog/:num
-highlighter: pygments
-
+#Update all the sections by editing the files inside _includes folder.
