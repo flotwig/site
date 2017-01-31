@@ -205,7 +205,7 @@ p {
   margin-bottom: 0;
   font-weight: 500;
 }
-.main-wrapper .time {
+.time {
   position: absolute;
   right: 0;
   top: 0;
@@ -303,4 +303,16 @@ used for profile image
   border: 0px solid #fff;
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.pull-left {
+  float:left;
+}
+
+.pull-right {
+  float:right;
+}
+
+.pull-center {
+  text-align: center;
 }
