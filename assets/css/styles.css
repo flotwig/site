@@ -316,3 +316,7 @@ used for profile image
 .pull-center {
   text-align: center;
 }
+
+.disabled {
+  color: #cacaca;
+}

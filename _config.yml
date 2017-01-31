@@ -33,3 +33,9 @@ paginate: 3
 paginate_path: /blog/:num
 highlighter: pygments
 
+defaults:
+  -
+    scope:
+      path: "blog/"
+    values:
+      style: styles-3
