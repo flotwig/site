@@ -306,11 +306,11 @@ used for profile image
 }
 
 .pull-left {
-  float:left;
+  text-align: left;
 }
 
 .pull-right {
-  float:right;
+  text-align: right;
 }
 
 .pull-center {
