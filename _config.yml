@@ -26,3 +26,10 @@ github: flotwig
 #twitter: '@webjeda'
 
 #Update all the sections by editing the files inside _includes folder.
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:title.html
+paginate: 3
+paginate_path: /blog/:num
+highlighter: pygments
+
