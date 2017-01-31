@@ -2,11 +2,12 @@
 layout: default
 ---
 
-<div class="section">
-	<p class="fancy">
-		<span>
-			{{ page.title }}
-		</span>
-	</p>
-	{{ content }}
-</div>
+<section class="section page-section">
+	<h2 class="section-title"><i class="fa fa-briefcase"></i>{{ page.title }}</h2>
+
+	<div class="item">
+		<div class="details">
+			<p>{{ content }}</p>
+		</div><!--//details-->
+	</div><!--//item-->
+</section>
