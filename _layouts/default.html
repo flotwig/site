@@ -1,39 +1,26 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ site.name}} :: {{ page.title }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Contrail+One|Source+Sans+Pro:400,600" rel="stylesheet" type="text/css"/>
-    <link rel="alternate" type="application/rss+xml" title="chary.us blog" href="https://chary.us/feed.xml">
-    <link rel="stylesheet" href="/assets/style.css"/>
-</head>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+{% include head.html %}
+
 <body>
-    <div id="container">
-        <div id="header">
-            <div id="name" class="section">
-                <a href="/"><h1>Zach Bloomquist</h1></a>
-            </div>
-            <div id="links">
-                <a class="linklet" href="https://github.com/flotwig">
-                    <img src="/assets/icons/github.png" alt="GitHub">
-                    <span>GitHub</span>
-                </a>
-                <!--<a class="linklet" href="/blog">
-                    <img src="/assets/icons/blog.png" alt="Blog">
-                    <span>Blog</span>
-                </a>-->
-                <a class="linklet" href="https://linkedin.com/in/zbloomq">
-                    <img src="/assets/icons/in.png" alt="LinkedIn">
-                    <span>LinkedIn</span>
-                </a>
-            </div>
-        </div>
-        <div id="body" class="section">
-            {{ content }}
-        </div>
-        <div id="footer" class="section">
-            &copy;{{ site.time | date: '%Y' }} Zach Bloomquist. The "in" mark is a registered trademark of LinkedIn.
-        </div>
+    <div class="wrapper">
+        {% include sidebar.html %}
+        
+        <div class="main-wrapper">
+           
+           {{content}}
+            
+        </div><!--//main-body-->
     </div>
+ 
+{% include footer.html %}
+ 
+{% include scripts.html %}
 </body>
-</html>
+</html> 
+

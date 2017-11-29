@@ -1,0 +1,26 @@
+
+{% if paginator.total_pages > 1 %}
+<section class="section paginator-section">
+    <div class="item">
+        <div class="details">
+            {% if paginator.previous_page %}
+            {% if paginator.page == 2 %}
+            <span class="previous pull-left"><a class="prev left" href="/blog/">&larr; Newer Posts</a></span>
+            {% else %}
+            <span class="previous pull-left"><a class="prev left" href="/blog/{{paginator.previous_page}}/">&larr; Newer Posts</a></span>
+            {% endif %}
+            {% else %}
+            <span class="previous disabled pull-left"><span>&larr; Newer Posts</span></span>
+            {% endif %}
+
+            <span class="pull-center">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+            {% if paginator.next_page %}
+            <span class="next pull-right"><a class="next right" href="/blog/{{paginator.next_page}}/">Older Posts &rarr;</a></span>
+            {% else %}
+            <span class="next disabled pull-right">Older Posts &rarr;</span>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endif %}
