@@ -3,6 +3,7 @@ title: chary.us
 url: 'https://chary.us'
 baseurl: '' #change it according to your repository name
 
+plugins: [jekyll-paginate]
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
 style: styles-2

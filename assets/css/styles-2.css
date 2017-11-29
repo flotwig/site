@@ -305,3 +305,15 @@ used for profile image
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+
+.details > span {
+  display: inline-block;
+  width: 25%;
+}
+.details > .pull-center {
+  width: 50%;
+  text-align: center;
+}
+.details > .pull-right {
+  text-align: right;''
+}
