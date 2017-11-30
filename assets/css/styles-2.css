@@ -315,5 +315,8 @@ used for profile image
   text-align: center;
 }
 .details > .pull-right {
-  text-align: right;''
+  text-align: right;
+}
+blockquote {
+  font-size: inherit !important;
 }
