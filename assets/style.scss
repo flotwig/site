@@ -1,0 +1,153 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
+
+$darkText: rgb(245, 255, 245);
+
+$darkBg: rgb(41, 41, 41);
+$darkAccent: rgb(102, 102, 102);
+$lightAccent: rgb(184, 184, 184);
+
+$sans: 'Noto Sans', 'Arial', sans-serif;
+$serif: 'Noto Serif', serif;
+
+html, body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+}
+
+body {
+    font-family: $sans;
+}
+
+a {
+    color: darken($darkAccent, 20%);
+}
+
+a:visited {
+    color: darken($darkAccent, 10%);
+}
+
+article .details {
+    font-size: 18px;
+    line-height: 1.58em;
+    letter-spacing: -.003em;
+}
+
+article h2 {
+    font-size: 2em;
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+article pre {
+    max-width: 100%;
+    overflow: auto;
+    border: 1px solid $lightAccent;
+    padding: .2em;
+    font-size: .8em;
+}
+
+article time {
+    font-size: .8em;
+}
+
+p, .serif {
+    font-family: $serif;
+}
+
+header {
+    background: $darkBg;
+    color: $darkText;
+    font-family: $serif;
+}
+
+header.page {
+    padding: 1em;
+    font-size: 2em;
+    border-bottom: 5px solid $darkAccent;
+}
+
+header.post h1 {
+    display: inline;
+}
+
+header.post h1 a, header.post h1 a:visited {
+    text-decoration: none;
+    color: $darkText;
+}
+
+header.post {
+    border-bottom: 3px solid $darkAccent;
+}
+
+header.post nav a, header.post nav a:visited {
+    color: $darkText;
+    font-family: $sans;
+    text-decoration: none;
+    margin-left: 1.5em;
+}
+
+.widget {
+    border: 1px solid $darkAccent;
+    border-radius: 5px;
+    margin-top: .5em;
+    margin-left: .25em;
+    margin-right: .25em;
+    height: fit-content;
+}
+
+.widget > p {
+    padding: .5em;
+    margin: 0;
+}
+
+.widget > p > span {
+    width: 100%;
+    border-bottom: 1px solid $darkAccent;
+    font-weight: 700;
+    display: block;
+    margin-bottom: .2em;
+}
+
+.widget.profile-pic {
+    padding: 0;
+}
+
+.widget.profile-pic > img {
+    width: 100%;
+}
+
+// desktop only styles
+@media screen and (min-width: 850px) {
+    header.post nav {
+        float: right;
+        margin-top: .5em;
+    }
+    .container {
+        width: 768px;
+        margin: auto;
+    }
+    .container-flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .widget {
+        width: 30%;
+    }
+    .widget.profile-pic {
+        height: 100%;
+    }
+}

@@ -1,33 +1,11 @@
 ---
-layout: default
+layout: page-post
 ---
 
-<section class="section blog-section">
-	<a href="{{ page.url }}"><h2 class="section-title"><i class="fa fa-pencil"></i>{{ page.title }}</h2></a>
-	<div class="item">
-		<div class="meta">
-			<div class="upper-row">
-				<div class="time">{{ page.date | date: "%b %d, %Y" }}</div>
-			</div><!--//upper-row-->
-		</div><!--//meta-->
-		<div class="details">
-			<p>{{ content }}</p>
-		</div><!--//details-->
-	</div><!--//item-->
-</section>
-
-<section class="section comments-section">
-	<a href="#comments"><h2 class="section-title" id="comments"><i class="fa fa-bullhorn"></i>Comments</h2></a>
-	<div class="item">
-		<div id="disqus_thread"></div>
-		<script type="text/javascript">
-			var disqus_shortname = 'charyus';
-			(function() {
-				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			})();
-		</script>
-		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<article>
+	<a href="{{ page.url }}"><h2>{{ page.title }}</h2></a>
+	<time>{{ page.date | date: "%B %d, %Y" }}</time>
+	<div class="details">
+		{{ content }}
 	</div>
-</section>
+</article>

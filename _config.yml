@@ -1,5 +1,6 @@
 title: Zach Bloomquist
 url: 'https://zach.bloomqu.ist'
+tagline: Student, hacker, builder.
 
 plugins: [jekyll-paginate]
 
@@ -10,10 +11,3 @@ permalink: /blog/:year/:month/:title.html
 paginate: 3
 paginate_path: /blog/:num
 highlighter: rouge
-
-defaults:
-  -
-    scope:
-      path: "blog/"
-    values:
-      style: styles-3
