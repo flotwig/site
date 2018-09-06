@@ -61,8 +61,19 @@ article time {
     font-size: .8em;
 }
 
-p, .serif {
+p, h4, .serif {
     font-family: $serif;
+}
+
+hr {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid $lightAccent;
+}
+
+h4 {
+    margin-bottom: 0;
 }
 
 header {
@@ -121,6 +132,8 @@ header.post nav a, header.post nav a:visited {
 
 .widget.profile-pic {
     padding: 0;
+    float:right;
+    margin-left: 1em;
 }
 
 .widget.profile-pic > img {
