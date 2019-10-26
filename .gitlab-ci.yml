@@ -6,7 +6,7 @@ variables:
 
 before_script:
   - apt update
-  - apt install nodejs
+  - apt install nodejs -y
   - bundle install
 
 test:
