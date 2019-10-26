@@ -6,13 +6,13 @@ cache:
     - /usr/local/bundle
 
 stages:
-  - install
   - build
   - pages
 
 build:
-  stage: install
+  stage: build
   script:
+  - apt install nodejs
   - gem install bundler -v 1.16.2
   - bundle install
   - _scripts/build.sh
