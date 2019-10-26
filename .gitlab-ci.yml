@@ -5,6 +5,8 @@ variables:
   LC_ALL: C.UTF-8
 
 before_script:
+  - apt update
+  - apt install nodejs
   - bundle install
 
 test:
