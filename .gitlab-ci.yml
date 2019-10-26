@@ -1,7 +1,9 @@
 image: ruby:2.3.1
 
 cache:
-  - /usr/local/bundle
+  key: gems
+  paths:
+    - /usr/local/bundle
 
 stages:
   - install
