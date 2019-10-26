@@ -1,5 +1,8 @@
 image: ruby:2.3.1
 
+cache:
+  - /usr/local/bundle
+
 stages:
   - install
   - build
@@ -8,7 +11,7 @@ stages:
 install:
   stage: install
   script:
-  - gem install bundler
+  - gem install bundler -v 1.16.2
   - bundle install
 
 build:
