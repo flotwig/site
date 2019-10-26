@@ -10,15 +10,11 @@ stages:
   - build
   - pages
 
-install:
+build:
   stage: install
   script:
   - gem install bundler -v 1.16.2
   - bundle install
-
-build:
-  stage: build
-  script:
   - _scripts/build.sh
   artifacts:
     paths:
