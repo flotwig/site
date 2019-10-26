@@ -1,29 +1,26 @@
-image: ruby:2.3.1
+image: ruby:2.3
 
-cache:
-  key: gems
-  paths:
-    - /usr/local/bundle
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
 
-stages:
-  - build
-  - pages
-
-build:
-  stage: build
-  script:
-  - apt install nodejs
-  - gem install bundler -v 1.16.2
+before_script:
   - bundle install
-  - _scripts/build.sh
+
+test:
+  stage: test
+  script:
+  - bundle exec jekyll build -d test
   artifacts:
     paths:
-    - _site
+    - test
+  except:
+  - master
 
 pages:
-  stage: pages
+  stage: deploy
   script:
-  - mv ./_site ./public
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
