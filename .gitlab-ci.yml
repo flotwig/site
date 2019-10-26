@@ -1,0 +1,27 @@
+stages:
+  - install
+  - build
+  - pages
+
+install:
+  stage: install
+  script:
+  - bundle install
+
+build:
+  stage: build
+  script:
+  - _scripts/build.sh
+  artifacts:
+    paths:
+    - _site
+
+pages:
+  stage: pages
+  script:
+  - mv ./_site ./public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
