@@ -1,8 +1,13 @@
 title: Zach Bloomquist
 url: 'https://zach.bloomqu.ist'
-tagline: Student, builder, hacker.
+tagline: Builder, hacker, human robot.
 
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+mermaid:
+  src: '/assets/mermaid.min.js'
 
 #Update all the sections by editing the files inside _includes folder.
 # Build settings

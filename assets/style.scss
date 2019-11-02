@@ -37,10 +37,18 @@ a:visited {
     color: darken($darkAccent, 10%);
 }
 
+article {
+    padding: .3em;
+}
+
 article .details {
     font-size: 18px;
     line-height: 1.58em;
     letter-spacing: -.003em;
+}
+
+article small {
+    opacity: .5;
 }
 
 article h2 {
@@ -61,7 +69,7 @@ article time {
     font-size: .8em;
 }
 
-p, h4, .serif {
+p, h4, .serif, li {
     font-family: $serif;
 }
 
@@ -93,19 +101,22 @@ header.post h1 {
 }
 
 header.post h1 a, header.post h1 a:visited {
+    font-size: 16px;
+    line-height: 1.1;
     text-decoration: none;
     color: $darkText;
 }
 
 header.post {
+    padding: .3em;
     border-bottom: 3px solid $darkAccent;
 }
 
 header.post nav a, header.post nav a:visited {
     color: $darkText;
-    font-family: $sans;
+    text-transform: lowercase;
     text-decoration: none;
-    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 .widget {
@@ -144,7 +155,7 @@ header.post nav a, header.post nav a:visited {
 @media screen and (min-width: 850px) {
     header.post nav {
         float: right;
-        margin-top: .5em;
+        margin-top: 1em;
     }
     .container {
         width: 768px;

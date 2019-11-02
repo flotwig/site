@@ -8,4 +8,21 @@ layout: page-post
 	<div class="details">
 		{{ content }}
 	</div>
+	<hr/>
+	<div class="comments">
+		<div id="disqus_thread"></div>
+		<script>
+		var disqus_config = function () {
+			this.page.url = '{{ site.url }}{{ page.url }}';
+		};
+		(function() {
+		var d = document, s = d.createElement('script');
+		s.src = 'https://charyus.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view discussion.</noscript>
+		<script id="dsq-count-scr" src="//charyus.disqus.com/count.js" async></script>
+	</div>
 </article>

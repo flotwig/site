@@ -1,0 +1,13 @@
+{
+  "no-inline-html": {
+    "allowed_elements": [
+      "small",
+      "ol",
+      "li"
+    ]
+  },
+  "line-length": false,
+  "no-trailing-punctuation": false,
+  "blanks-around-fences": false,
+  "blanks-around-lists": false
+}
