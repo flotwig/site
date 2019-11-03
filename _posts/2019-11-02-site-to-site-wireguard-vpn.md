@@ -163,6 +163,8 @@ One of the benefits to this setup is that you no longer need to expose your Inte
   ```shell
   # turn on ufw
   ufw enable
+  # allow inbound access to WireGuard's port
+  ufw allow 51820/udp
   # allow VPN IPs to access SSH on port 22
   ufw allow from 10.222.0.0/24 to any port 22 proto tcp
   # remove default SSH allow rules
@@ -170,7 +172,7 @@ One of the benefits to this setup is that you no longer need to expose your Inte
   ufw delete allow 22/tcp
   ```
 
-Now you should only be able to access SSH on your Internet-facing server via the VPN IP address, `10.111.0.1`.
+Now you should only be able to access SSH on your Internet-facing server via the VPN IP address, `10.222.0.1`.
 
 ### Extra: Alternative WireGuard Distribution
 
