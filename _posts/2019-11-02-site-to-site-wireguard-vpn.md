@@ -174,10 +174,13 @@ One of the benefits to this setup is that you no longer need to expose your Inte
 
 Now you should only be able to access SSH on your Internet-facing server via the VPN IP address, `10.222.0.1`.
 
-### Extra: Alternative WireGuard Distribution
+### Extra: Alternative WireGuard Distributions
 
-The official [WireGuard][wireguard] distribution comes as a kernel mod. While the official implementation is probably best, there is also an alternative in [`boringtun`](https://github.com/cloudflare/boringtun).
-`boringtun` is Cloudflare's own userspace WireGuard client, used in their proprietary [Argo Tunnel](https://developers.cloudflare.com/argo-tunnel/) Site-to-Site VPN. You can use this if you're unwilling to install a kernel mod.
+The official [WireGuard][wireguard] distribution comes as a kernel mod. While the official implementation is best, there are also some alternatives that run in userspace, if you're unwilling/unable to install a kernel mod:
+
+* [`wireguard-go`](https://git.zx2c4.com/wireguard-go/about/) - This is WireGuard's official userspace implementation, written in Go. Recommended.
+* [`wireguard-rs`](https://git.zx2c4.com/wireguard-rs) - Another userspace implementation, also by the WireGuard authors, written in Rust. WIP, not recommended for production.
+* [`boringtun`](https://github.com/cloudflare/boringtun) - Cloudflare's unofficial userspace WireGuard client, also written in Rust. Used in their proprietary [Argo Tunnel](https://developers.cloudflare.com/argo-tunnel/) Site-to-Site VPN. *Note: the original author of WireGuard, Jason A. Donenfield, [has expressed some opinions about Cloudflare's involvement in WireGuard](https://lists.zx2c4.com/pipermail/wireguard/2019-March/004048.html).*
 
 [wireguard]: https://www.wireguard.com/
 [ramnode]: https://ramnode.com/
