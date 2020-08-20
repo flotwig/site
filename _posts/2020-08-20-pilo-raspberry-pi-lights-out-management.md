@@ -161,6 +161,7 @@ Comes out to roughly $60 if you buy everything at it's cheapest, $50 if you're l
     ```
     npm install --global pilo
     ```
+    You may need to pass `--unsafe-perms` if installing as `root`.
 6. You can now start `pilo` on port 3000 by running the command with `AUTH_SHA` set in an environment variable:
     ```
     AUTH_SHA=a765a8beaa9d561d4c5cbed29d8f4e30870297fdfa9cb7d6e9848a95fec9f937 pilo &
