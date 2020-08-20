@@ -17,7 +17,7 @@ html, body, h1 {
     padding: 0;
 }
 
-img {
+img, video {
     max-width: 100%;
 }
 
@@ -51,8 +51,11 @@ article small {
     opacity: .5;
 }
 
-article h2 {
+h2 {
     font-size: 2em;
+}
+
+article h2 {
     margin-top: .5em;
     margin-bottom: 0;
 }
@@ -65,8 +68,28 @@ article pre {
     font-size: .8em;
 }
 
-article time {
+article .frontmatter {
     font-size: .8em;
+
+    >:not(:last-child)::after {
+        content: ' -';
+    }
+
+
+
+    .tags {
+        ul {
+            padding: 0;
+        }
+
+        ul, li {
+            display: inline;
+        }
+
+        li:not(:last-child)::after {
+            content: ',';
+        }
+    }
 }
 
 p, h4, .serif, li {
