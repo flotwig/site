@@ -41,6 +41,12 @@ article {
     padding: .3em;
 }
 
+article blockquote {
+    border-left: solid 2px lighten($darkAccent, 20%);
+    padding-left: 10px;
+    color: $darkAccent;
+}
+
 article .details {
     font-size: 18px;
     line-height: 1.58em;
@@ -66,6 +72,11 @@ article pre {
     border: 1px solid $lightAccent;
     padding: .2em;
     font-size: .8em;
+}
+
+article img {
+    display: block;
+    margin: auto;
 }
 
 article .frontmatter {
