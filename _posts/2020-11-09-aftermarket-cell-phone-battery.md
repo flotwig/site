@@ -9,7 +9,7 @@ This is a story of one man's quest for power.
 
 I purchased my current phone, a OnePlus 5T, in 2017. This summer, after about two and a half years of ownership, I noticed that it was no longer holding a charge all day. Frequently, the phone would reach 0% and shut off, right in the middle of tracking an evening bike ride or watching Netflix while cooking dinner. Although cell phone battery wear is a well-known issue, I got tired of it pretty quickly.
 
-I used the [AccuBattery](https://play.google.com/store/apps/details?id=com.digibites.accubattery&hl=en_US&gl=US) app for about two months to try and get a handle on my battery health. It measured my phone's amperage draw during the day and used that to estimate that of the 3300 milliamp-hour (mAh) capacity that my battery originally offered, only about 2400 mAh of capacity remainied - only about 75% of the battery's original health:
+I used the [AccuBattery](https://play.google.com/store/apps/details?id=com.digibites.accubattery&hl=en_US&gl=US) app for about two months to try and get a handle on my battery health. It measured my phone's amperage draw during the day and used that to estimate that of the 3300 milliamp-hour (mAh) capacity that my battery originally offered, only about 2400 mAh of capacity remained - only about 75% of the battery's original health:
 
 ![Screenshot of AccuBattery app for OEM battery capacity](/assets/battery/oem-capacity.png)
 
