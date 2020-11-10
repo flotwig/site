@@ -71,7 +71,7 @@ Anyways, I didn't buy this shady AliExpress battery just so that I could do a bu
 
 From a quantitative perspective, AccuBattery reports that the aftermarket battery has an estimated 3360 mAh capacity, which about matches the capacity of the OEM battery:
 
-![Screenshot of AccuBattery app for aftermarket battery capacity](/assets/battery/oem-capacity.png)
+![Screenshot of AccuBattery app for aftermarket battery capacity](/assets/battery/aftermarket-capacity.png)
 
 However, what AccuBattery fails to account for is the fact that once the aftermarket battery reaches 15%, the battery percentage begins to free-fall until it reaches 0% and shuts off. It seems like 15% on the aftermarket battery is equivalent to 1% on the OEM battery. I think this is because the Android OS cannot correctly estimate the battery's remaining charge because it has different voltage characteristics than the OEM battery, but it doesn't really bother me, I just have to make sure that to charge the phone at 15% instead of 1%. This seems to be an extremely common experience with DIY battery replacements - even folks using the iFixit battery run in to this issue.
 
