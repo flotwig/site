@@ -33,42 +33,20 @@ layout: page-post
 	{% endif %}
 	<hr/>
 	<div class="comments">
-		<h3>Comments</h3>
-		<div id="load-comments">
-			This blog uses Disqus for comments. To protect the privacy of visitors, comments are only loaded if you click the button below.
-			<noscript>Please enable JavaScript to view discussion.</noscript>
-		</div>
-		<div id="disqus_thread"></div>
-			<script>
-			var disqus_config = function () {
-				this.page.url = '{{ site.url }}{{ page.url }}';
+		<h3>Comments on "{{ page.title }}"</h3>
+		<noscript>Please enable Javascript to view comments.</noscript>
+		<div id="remark42"></div>
+		<script>
+			var remark_config = {
+				host: 'https://comments.bloomqu.ist',
+				site_id: 'blog',
+				components: ['embed'],
+				url: 'https://zach.bloomqu.ist{{ page.url }}',
+				theme: 'light'
 			};
 
-			var loaded = false;
-			
-			var loadDisqus = function() {
-				var d = document, s = d.createElement('script');
-				s.src = 'https://charyus.disqus.com/embed.js';
-				s.setAttribute('data-timestamp', +new Date());
-				(d.head || d.body).appendChild(s);
-			};
-			
-			var loadCommentsDiv = document.getElementById('load-comments');
-			var loadCommentsBtn = document.createElement('button');
-
-			loadCommentsBtn.innerHTML = 'Load comments from Disqus';
-
-			loadCommentsBtn.addEventListener('click', () => {
-				if (loaded) {
-					return
-				}
-
-				loaded = true;
-				loadCommentsDiv.style.display = 'none';
-				loadDisqus();
-			});
-			
-			loadCommentsDiv.appendChild(loadCommentsBtn);
-		</script>
+			!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);
+			</script>
+		<script src="https://comments.bloomqu.ist/web/embed.js"></script>
 	</div>
 </article>
