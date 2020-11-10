@@ -10,19 +10,26 @@ layout: page-post
 	</div>
 	<hr/>
 	<div class="comments">
-		<div id="disqus_thread"></div>
+		<h3>Comments</h3>
+		<noscript>Please enable Javascript to view comments.</noscript>
+		<div id="remark42"></div>
 		<script>
-		var disqus_config = function () {
-			this.page.url = '{{ site.url }}{{ page.url }}';
-		};
-		(function() {
-		var d = document, s = d.createElement('script');
-		s.src = 'https://charyus.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
+			var remark_config = {
+				host: 'https://comments.bloomqu.ist',
+				site_id: 'blog',
+				components: ['embed'],
+				url: 'https://zach.bloomqu.ist{{ page.url }}',
+				theme: 'light'
+			};
+
+			(function(c) {
+				for(var i = 0; i < c.length; i++){
+					var d = document, s = d.createElement('script');
+					s.src = remark_config.host + '/web/' +c[i] +'.js';
+					s.defer = true;
+					(d.head || d.body).appendChild(s);
+				}
+			})(remark_config.components || ['embed']);
 		</script>
-		<noscript>Please enable JavaScript to view discussion.</noscript>
-		<script id="dsq-count-scr" src="//charyus.disqus.com/count.js" async></script>
 	</div>
 </article>
