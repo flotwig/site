@@ -1,16 +1,13 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
-
 $darkText: rgb(218, 218, 218);
 
 $darkBg: rgb(41, 41, 41);
 $darkAccent: rgb(102, 102, 102);
 $lightAccent: rgb(184, 184, 184);
 
-$sans: 'Noto Sans', 'Arial', sans-serif;
-$serif: 'Noto Serif', serif;
+$sans: 'Arial', sans-serif;
 
 html, body, h1 {
     margin: 0;
@@ -48,9 +45,8 @@ article blockquote {
 }
 
 article .details {
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 1.58em;
-    letter-spacing: -.003em;
 }
 
 article small {
@@ -80,13 +76,12 @@ article img {
 }
 
 article .frontmatter {
-    font-size: .8em;
+    font-size: .5em;
+    opacity: .5;
 
     >:not(:last-child)::after {
         content: ' -';
     }
-
-
 
     .tags {
         ul {
@@ -103,10 +98,6 @@ article .frontmatter {
     }
 }
 
-p, h4, .serif, li {
-    font-family: $serif;
-}
-
 hr {
     border-top: 0;
     border-right: 0;
@@ -121,7 +112,7 @@ h4 {
 header {
     background: $darkBg;
     color: $darkText;
-    font-family: $serif;
+    font-family: $sans;
 }
 
 header.page {
