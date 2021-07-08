@@ -18,7 +18,7 @@ Obviously, this cannot stand forever. I wanted to self-host my email, but I know
 
 I cannot use an email service that does not have *reliable sending and receiving*. Happily, each of these problems has a solution:
 
-1. The [Mailu](https://mailu.io/) project bundles antispam, POP3, IMAP, SMTP, webmail, administrative interface, etc. into a set of Docker containers that can be managed with Kubernetes or Docker Compose. This gives us a good, well-architected base setup to configure further.
+1. The [Mailu](https://mailu.io/) project bundles antispam, POP3, IMAP, SMTP, webmail, administrative interface, etc. into a set of Docker containers that can be managed with Docker Compose or your container tool of choice. This gives us a good, well-architected base setup to configure further.
 2. Use a trusted SMTP outgoing relay to send email. Yes, this is not self-hosting, but you cannot "self-host" an outgoing email anyways, it is ultimately leaving your network one way or another.
 3. Use a backup email server to receive email when your server is down. Set up MX records with a lower priority than your self-hosted mail server to have them act as a fallback. You can either self-host this backup or use a public service. Then, when the primary server is back up, use IMAP to mirror messages from the backup automatically.
 
@@ -125,6 +125,7 @@ Now you are sending and receiving email in a safe, reliable way, while still mai
 After setting everything up, you may wish to take some additional steps to enhance and secure your setup:
 
 * Set up a catch-all address for your domains using `Aliases` in the Mailu admin panel.
+* Establish a backup strategy - as with anything self-hosted, the data is now your ultimate responsibility. Nobody will be around to help you recover lost emails when your server's hard drive inevitably crashes, so establish a strategy now.
 * Increase your mailbox quota - by default, Mailu creates all accounts with a 1GB mail quota, which is pretty small.
 * Disable any services you don't need running 24/7 - this could include the admin panel and webmail.
 * Test your email setup by sending and receiving emails from your friends. This will help catch any errors with your setup before they manifest into truly embarrassing email problems.
