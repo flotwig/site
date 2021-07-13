@@ -9,23 +9,31 @@ title: Zach Bloomquist
     <p>Me with an alien yeti at <a href="https://meowwolf.com/">Meow Wolf</a>.</p>
 </div>
 
-<h4>About Me</h4>
-<hr/>
+<h3>About Me</h3>
 Hi, I'm Zach. I'm a software developer at <a href="https://cypress.io">Cypress.io</a>, helping to make the world's greatest testing software.<br/>
 
-<h4>Links</h4>
-<hr/>
-<ul class="serif">
+<h3>Links</h3>
+<ul>
     <li>
         GitHub: <a href="https://github.com/flotwig">@flotwig</a>
     </li>
-    <li>   
+    <li>
         <a href="https://linkedin.com/in/zbloomq">My LinkedIn</a>
     </li>
     <li>
         <a href="mailto:hello@bloomqu.ist">Contact Me</a>
     </li>
-    <li>
-        <a href="/blog">My Blog</a>
-    </li>
 </ul>
+
+<h3>Blog Posts</h3>
+{% for post in site.posts %}
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+	{% unless forloop.first %}</ul>{% endunless %}
+	<h4>{{ currentdate }}</h4>
+	<ul>
+    {% assign date = currentdate %}
+  {% endif %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | date: "%B %d, %Y" }}</li>
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}

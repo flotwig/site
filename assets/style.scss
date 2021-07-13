@@ -100,7 +100,9 @@ article .frontmatter {
 
 #load-comments {
     button {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
         display: block;
     }
 }
@@ -124,7 +126,6 @@ header {
 
 header.page {
     padding: 1em;
-    font-size: 2em;
     border-bottom: 5px solid $darkAccent;
 }
 
@@ -140,13 +141,12 @@ header.post h1 a, header.post h1 a:visited {
 }
 
 header.post {
-    padding: .3em;
+    padding-bottom: .5em;
     border-bottom: 3px solid $darkAccent;
 }
 
 header.post nav a, header.post nav a:visited {
     color: $darkText;
-    text-transform: lowercase;
     text-decoration: none;
     margin-right: 1.5em;
 }
@@ -188,6 +188,9 @@ header.post nav a, header.post nav a:visited {
     header.post nav {
         float: right;
         margin-top: 1em;
+    }
+    header.page {
+        font-size: 2em;
     }
     .container {
         width: 768px;
