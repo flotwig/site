@@ -2,7 +2,7 @@
 layout: post
 title:  "Medialink MWN-WAPR150N Firmware Hacking"
 date:   2011-12-10 00:00:00
-categories: firmware netsec
+tags: firmware netsec devices
 ---
 
  Today, I set out on a quest to try and decrypt/decompress/dearchive the firmware of my MediaLink MWN-WAPR150N router. I would put DD-WRT on it, but the hardware is too limited for that sort of junk. It's a fine Wireless-N router as it is, but the inner programmer in me wanted to get inside and see what damage I could do. I especially wanted to mess with the web front-end, which is coded in ASP and runs on GoAhead-Webs, a web server for embedded systems. This is a log of my adventures with the MediaLink APR150N wireless router.

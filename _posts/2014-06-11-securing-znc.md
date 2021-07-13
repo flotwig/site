@@ -2,7 +2,7 @@
 layout: post
 title:  "Securing ZNC with a SSL certificate"
 date:   2014-06-11 12:51:43
-categories: irc znc netsec
+tags: irc znc netsec
 ---
 
 [ZNC](http://znc.in/), the dominant IRC bouncer, has an option to use an SSL certificate to encrypt your connection between your PC and the bouncer. The hardest part of setting this up is creating a self-signed certificate to use for the encryption. The commands to generate and assemble a 10-year SSL certificate with 4096 bits of security are below.  

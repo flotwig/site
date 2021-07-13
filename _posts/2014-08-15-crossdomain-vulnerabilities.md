@@ -2,7 +2,7 @@
 layout: post
 title:  "A survey of crossdomain.xml vulnerabilities"
 date:   2014-08-15 07:15:00
-categories: netsec
+tags: netsec
 ---
 
 Vulnerable crossdomain.xml files can be used by malicious people to run CSRF attacks if the victim has Flash installed on their computer. In response to a post by chs on [crossdomain.xml proofs of concept](http://www.chs.us/liberal-crossdomain-xml-exploit-example/) and Seth Art's [real-world exploit of Bing using crossdomain.xml](http://sethsec.blogspot.com/2014/07/crossdomain-bing.html), I created an application in Ruby which parses the [Alexa top million site list (CSV, 10MB)](http://s3.amazonaws.com/alexa-static/top-1m.csv.zip) and scans for vulnerable crossdomain.xml files. Vulnerable here is defined as a crossdomain.xml file which permits connections from any domain name (*). It sorts the domains into four categories:

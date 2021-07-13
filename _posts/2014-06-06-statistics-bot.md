@@ -2,7 +2,7 @@
 layout: post
 title:  "StatsBot: A communal IRC statistics bot"
 date:   2014-06-06 09:20:22
-categories: irc statistics
+tags: irc statistics
 ---
 
 ![The Statistics bot in action](/images/stats.png)

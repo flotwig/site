@@ -2,7 +2,7 @@
 layout: post
 title:  "Fixing Black Viewfinder in Motorola Atrix 4G"
 date:   2012-11-12 00:00:00
-categories: hardware atrix
+tags: hardware atrix
 ---
 
 ![A screenshot of the broken viewfinder](/images/device-2012-12-22-174354.png)

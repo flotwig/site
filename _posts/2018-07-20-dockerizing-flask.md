@@ -2,7 +2,7 @@
 layout: post
 title:  "Dockerizing a Python 3 Flask App Line-by-Line"
 date:   2018-07-20 00:00:00
-categories: docker, python
+tags: docker, python
 ---
 
 If you’re like me, you end up writing a lot of Flask apps for random web applications and APIs. When you’re done building these Flask apps, typically, you need to deploy them to production somehow. Unless you’re using a container service like Heroku, deployment is synonymous with SSHing to a live server, installing your dependencies, and starting your application from source.

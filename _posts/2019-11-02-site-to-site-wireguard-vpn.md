@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating a Site-to-Site WireGuard VPN for a home server"
 date:   2019-11-02 13:17:40
-categories: declouding, wireguard
+tags: declouding wireguard
 ---
 
 ![Image of Bezos gazing at you.](/assets/bezos-gazing.jpg)

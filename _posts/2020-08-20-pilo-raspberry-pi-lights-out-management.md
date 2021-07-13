@@ -2,7 +2,7 @@
 layout: post
 title: "Pilo: Raspberry Pi-Powered Lights-Out Remote Server Management for $60 or less"
 date:  2020-08-20 13:46:50
-tags: devices
+tags: declouding devices
 ---
 
 ![Pilo board before final tape-up](/assets/pilo-naked.jpg)

@@ -8,6 +8,29 @@ layout: page-post
 	<div class="details">
 		{{ content }}
 	</div>
+	{% assign printedRelated = false %}
+	{% assign printed = "" %}
+	{% for post in site.posts %}
+		{% for tag in page.tags %}
+			{% if post.tags contains tag and post.url != page.url %}
+				{% unless printed contains post.url %}
+					{% if printedRelated != true %}
+						{% assign printedRelated = true %}
+						<hr/>
+						<div class="related-posts">
+							<h3>Related Posts on zach.bloomqu.ist</h3>
+							<ul>
+					{% endif %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y" }})</li>
+					{% assign printed = printed | append: " " | append: post.url %}
+				{% endunless %}
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	{% if printedRelated %}
+	</ul>
+	</div>
+	{% endif %}
 	<hr/>
 	<div class="comments">
 		<h3>Comments</h3>

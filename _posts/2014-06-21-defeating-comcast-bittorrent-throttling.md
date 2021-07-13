@@ -2,7 +2,7 @@
 layout: post
 title:  "Defeating Comcast BitTorrent Throttling: The Easy Way"
 date:   2014-06-21 00:07:10
-categories: netsec comcast
+tags: netsec comcast
 ---
 
 ![Example settings in Transmission](/images/transmission.png)

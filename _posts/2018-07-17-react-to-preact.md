@@ -2,7 +2,7 @@
 layout: post
 title:  "Moving From React to Preact: A Developer’s Story"
 date:   2018-07-17 00:00:00
-categories: react
+tags: react
 ---
 
 ![](https://cdn-images-1.medium.com/max/1600/1*mThPH_B2Ms7qG_nVySy3qA.gif)

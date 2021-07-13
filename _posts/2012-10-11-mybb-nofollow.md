@@ -2,7 +2,7 @@
 layout: post
 title:  "Adding rel=nofollow to outgoing links in MyBB"
 date:   2012-10-11 00:00:00
-categories: mybb
+tags: mybb
 ---
 
  If you run a forum, you probably have spammers signing up all the time, posting links on your site and stealing your valuable PageRank. MyBB offers a way to add rel="nofollow" to outgoing links in posts via a creative use of the MyCode functionality.

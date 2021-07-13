@@ -2,7 +2,7 @@
 layout: post
 title:  "spoofident: A fake identd written in Python"
 date:   2014-06-21 20:27:25
-categories: netsec
+tags: netsec
 ---
 
 ![The workhorse function of spoofident](/images/spoofident.png)

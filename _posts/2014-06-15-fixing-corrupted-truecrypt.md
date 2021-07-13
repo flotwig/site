@@ -2,7 +2,7 @@
 layout: post
 title:  "Fixing a corrupted TrueCrypt volume for Windows rescue"
 date:   2014-06-15 12:19:56
-categories: truecrypt encryption
+tags: truecrypt encryption
 ---
 
 ![TrueCrypt rescue disk screenshot.](/images/truecrypt.png)
