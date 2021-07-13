@@ -51,6 +51,8 @@ Once you have an account with your SMTP relay provider, you will want to add the
 
 ![Screenshot of SendGrid CNAME instructions](/assets/email/sendgrid-dns.png)
 
+Confused about how SPF can work like this, even though it's being set on `em0000.yourdomain.com`, not `yourdomain.com`? SPF is used to validate the `Return-Path` header, not `From`, and SendGrid uses `em0000.yourdomain.com` as the `Return-Path`. 💥. [Read more on StackOverflow.](https://stackoverflow.com/q/67156334/3474615)
+
 Now that the domains are configured, obtain the credentials for your provider's SMTP gateway. In SendGrid, this is under the "API Keys" settings panel. Your API key is your password.
 
 In your `mailu.env` file, update the following environment variables:
