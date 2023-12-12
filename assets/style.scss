@@ -34,6 +34,10 @@ a:visited {
     color: darken($darkAccent, 10%);
 }
 
+.frontpage {
+    line-height: 1.58em;
+}
+
 article {
     padding: .3em;
 }
@@ -154,9 +158,6 @@ header.post nav a, header.post nav a:visited {
 .widget {
     border: 1px solid $darkAccent;
     border-radius: 5px;
-    margin-top: .5em;
-    margin-left: .25em;
-    margin-right: .25em;
     height: fit-content;
 }
 
@@ -171,12 +172,6 @@ header.post nav a, header.post nav a:visited {
     font-weight: 700;
     display: block;
     margin-bottom: .2em;
-}
-
-.widget.profile-pic {
-    padding: 0;
-    float:right;
-    margin-left: 1em;
 }
 
 .widget.profile-pic > img {
@@ -204,9 +199,14 @@ header.post nav a, header.post nav a:visited {
         padding: 0;
     }
     .widget {
+        margin-top: .5em;
+        margin-left: .25em;
+        margin-right: .25em;
         width: 30%;
     }
     .widget.profile-pic {
-        height: 100%;
+        padding: 0;
+        float:right;
+        margin-left: 1em;
     }
 }
