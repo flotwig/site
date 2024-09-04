@@ -4,4 +4,5 @@ My personal site.
 
 ## Development
 
-`bundle exec jekyll serve`
+* Deps: `bundle`
+* Start: `./start.sh`
